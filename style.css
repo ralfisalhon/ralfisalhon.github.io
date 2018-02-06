@@ -2,7 +2,7 @@
 
 body {
 	background-color: #1E90FF;
-	font-family: "Comic Sans MS";
+	font-family: "Avenir Next";
 	font-size: 28px;
 	color: white;
 }
@@ -11,4 +11,12 @@ h1, h2, h3, p {
 	text-align: center;
 	/*color: yellow;*/
 	/*background-color: magenta;*/
+}
+
+.bold-title {
+	font-weight: bold;
+}
+
+.italics-title {
+	font-style: italic;
 }
