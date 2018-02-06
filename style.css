@@ -1,0 +1,14 @@
+/* This is a style sheet */
+
+body {
+	background-color: #1E90FF;
+	font-family: "Comic Sans MS";
+	font-size: 28px;
+	color: white;
+}
+
+h1, h2, h3, p {
+	text-align: center;
+	/*color: yellow;*/
+	/*background-color: magenta;*/
+}
