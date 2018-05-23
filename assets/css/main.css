@@ -2157,6 +2157,10 @@ img[height] {
   font-size: 65%;
 }
 
+.c-brand__sizer--sm {
+  font-size: 50%;
+}
+
 @media (min-width: 1024px) {
   .c-brand__title {
     margin-bottom: .8rem;
