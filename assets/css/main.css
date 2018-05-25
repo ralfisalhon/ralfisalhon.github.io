@@ -2158,7 +2158,7 @@ img[height] {
 }
 
 .c-brand__sizer--sm {
-  font-size: 75%;
+  font-size: 65%;
 }
 
 @media (min-width: 1024px) {
