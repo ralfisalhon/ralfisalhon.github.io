@@ -87,8 +87,8 @@ function setup_scrollreveal()
             mobile: false
         };
         var header_config = $.extend(false, default_config, {
-            duration: 1200,
-            delay: 700
+            duration: 1200, //1200
+            delay: 500		//700
         });
         var footer_config = $.extend(false, default_config, {
             duration: 1500,
