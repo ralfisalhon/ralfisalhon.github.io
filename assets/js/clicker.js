@@ -1,10 +1,3 @@
-// document.onkeydown = function(evt) {
-// 	evt = evt || window.event;
-// 	if (evt.keyCode == 82 && evt.keyCode == 65) {
-// 		clickCounter();
-// 	}
-// };
-
 var map = {82: false, 65: false, 76: false, 70: false, 73: false};
 $(document).keydown(function(e) {
 	if (e.keyCode in map) {
