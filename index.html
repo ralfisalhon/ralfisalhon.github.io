@@ -25,7 +25,7 @@
 
 		<!-- Nivo Lightbox-->
 		<link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css" />
-		<link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
+		<!-- <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" /> -->
 
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="assets/css/main.css">
@@ -47,6 +47,9 @@
 
 		<!-- Main JS -->
 		<script src="assets/js/main.js"></script>
+
+		<!-- Clicker JS -->
+		<script src="assets/js/clicker.js"></script>
 	</head>
 
 	<body>
@@ -106,6 +109,14 @@
 													</span>
 												</h4>
 
+												<h4 class="a-header c-brand__sub-title t-sub-title">
+													<span class="c-brand__sizer--sm">
+														<span id="before"></span>
+														<a id="result" title="Click to do something" href="#" onclick="clickCounter();return false;"></a>
+														<span id="after"></span>
+														<a id="after2" title="Click to do something" href="#" onclick="hideCounter();return false;"></a>
+													</span>
+												</h4>
 											</div>
 										</div>
 
