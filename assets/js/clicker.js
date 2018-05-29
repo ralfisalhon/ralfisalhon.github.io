@@ -17,17 +17,10 @@ $(document).keydown(function(e) {
 
 function clickCounter() {
 	if(typeof(Storage) !== "undefined") {
-		if (localStorage.clickcount) {
-			localStorage.clickcount = Number(localStorage.clickcount)+1;
-		} else {
-			localStorage.clickcount = 1;
-		}
-
-		document.getElementById("before").innerHTML = "You have clicked this";
-		document.getElementById("result").innerHTML = "Button";
+		localStorage.clickcount = Number(localStorage.clickcount)+1;
+		
 		document.getElementById("after").innerHTML = localStorage.clickcount;
-		document.getElementById("after2").innerHTML = "Hide Me";
-
+		
 		if (localStorage.clickcount == 1) {
 			document.getElementById("after").innerHTML += " time!";
 		} else {
