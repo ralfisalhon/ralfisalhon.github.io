@@ -20,7 +20,7 @@ function clickCounter() {
 		localStorage.clickcount = Number(localStorage.clickcount)+1;
 		
 		document.getElementById("after").innerHTML = localStorage.clickcount;
-		
+
 		if (localStorage.clickcount == 1) {
 			document.getElementById("after").innerHTML += " time!";
 		} else {
@@ -34,7 +34,7 @@ function clickAppear() {
 		if (localStorage.clickcount) {
 			localStorage.clickcount = Number(localStorage.clickcount);
 		} else {
-			localStorage.clickcount = 1;
+			localStorage.clickcount = 0;
 		}
 
 		document.getElementById("before").innerHTML = "You have clicked this";
