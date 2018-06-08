@@ -2475,4 +2475,26 @@ img[height] {
   display: none !important;
 }
 
-/*# sourceMappingURL=main.css.map */
+/* Line for animation */
+.line-1{
+    position: relative;
+    width: 24em;
+    border-right: 1px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    /*text-align: center !important;*/
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(50) 1.5s 1 normal both,
+             blinkTextCursor 500ms steps(50) 0s infinite normal;
+}
+@keyframes typewriter{
+  from {width: 0;}
+  to {width: 22em;}
+}
+@keyframes blinkTextCursor{
+  from {border-right-color: rgba(255,255,255,.75);}
+  to {border-right-color: transparent;}
+}
