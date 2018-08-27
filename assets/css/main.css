@@ -487,7 +487,7 @@ pre,
 }
 
 html {
-  font-size: 14px;
+  font-size: 13px;
   min-height: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -694,7 +694,7 @@ img[height] {
 
 [class*="o-grid__col"] {
   width: 100%;
-  padding-right: 3.5rem;
+  padding-right: 1.75rem; /*TODO: Padding here was 3.5rem*/
   margin-bottom: 0;
 }
 
