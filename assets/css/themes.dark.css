@@ -181,12 +181,12 @@ a .fa,
 
 @media (max-width: 1023px) {
   .t-section__header {
-    border-top: 1px solid #404242;
-    border-bottom: 1px solid #404242;
+  border-top: 1px solid #404242;
+  border-bottom: 1px solid #404242;
   }
   .t-section--header .t-section__header {
-    border-top: none;
-    border-bottom: none;
+  border-top: none;
+  border-bottom: none;
   }
 }
 
@@ -195,21 +195,21 @@ a .fa,
   .t-section,
   .t-section__header,
   .t-section--header .t-section__header {
-    background: #2b2c2c;
+  background: #2b2c2c;
   }
   .t-section__content {
-    background: #2d2e2e;
+  background: #2d2e2e;
   }
   /* Even Sections */
   .t-section:nth-child(even),
   .t-section:nth-child(even) .t-section__header {
-    background: #292a2a;
+  background: #292a2a;
   }
   .t-section:nth-child(even) .t-section__content {
-    background: #2b2c2c;
+  background: #2b2c2c;
   }
   .t-section:nth-child(even) .t-timeline__point {
-    box-shadow: 0 0 0 6px #2b2c2c;
+  box-shadow: 0 0 0 6px #2b2c2c;
   }
 }
 
