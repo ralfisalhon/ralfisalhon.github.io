@@ -10,8 +10,7 @@ class PICounter extends Component {
     super();
     this.state = {
       num: 0,
-      fontSize: 32,
-      fontSpeed: 150,
+      fontSpeed: 20,
     };
   }
 
@@ -28,18 +27,23 @@ class PICounter extends Component {
   };
 
   componentDidMount() {
-    this.piTimer();
+    // this.piTimer();
   }
 
   render() {
-    const { num, fontSize } = this.state;
+    const { num } = this.state;
     return (
       <div>
-        <p className="text">I know 500 digits of π!</p>
+        <p className="text fact-title">> I know 500 digits of π!</p>
         <div className="m-10" />
         <div className="PIContainer">
           <p className="PI">
-            <b>3.14</b>
+            <b
+              onClick={() => this.piTimer()}
+              style={num === 0 ? { textDecorationLine: 'underline', cursor: 'pointer' } : {}}
+            >
+              3.14
+            </b>
             {PI.substr(4, num)}
           </p>
         </div>

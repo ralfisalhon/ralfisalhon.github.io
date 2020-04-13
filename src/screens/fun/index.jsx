@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 import PICounter from '../../components/PICounter';
+import AlphabetRecord from '../../components/AlphabetRecord';
 import Line from '../../components/Line';
 class FunFactsPage extends Component {
   render() {
@@ -12,6 +13,7 @@ class FunFactsPage extends Component {
         <Line />
         <PICounter />
         <Line />
+        <AlphabetRecord />
       </div>
     );
   }
