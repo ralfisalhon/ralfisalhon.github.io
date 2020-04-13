@@ -1,0 +1,25 @@
+.full-page {
+  display: flex;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
+
+.header {
+  height: 10%;
+  width: 100vw;
+  background-color: #2b2c2c;
+}
+
+.content {
+  height: 90%;
+  width: 100vw;
+  background-color: #2d2e2e;
+}
+
+.p {
+  font-size: 64px;
+  color: black;
+}
