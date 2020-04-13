@@ -3,6 +3,8 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import resume from '../../assets/pdf/RRS_Resume_Mar_2020_V2.pdf';
 import Line from '../../components/Line';
 
+import './AnnotationLayer.css';
+
 import './styles.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -18,7 +20,7 @@ function removeTextLayerOffset() {
 
 class ResumePage extends Component {
   render() {
-    const resumeHeight = window.innerHeight * 0.9;
+    const resumeHeight = window.innerHeight * 1.25;
     return (
       <div>
         <h1 className="no-margin">My Resume</h1>
@@ -27,7 +29,7 @@ class ResumePage extends Component {
         <Line />
         <div style={{ height: resumeHeight, overflow: 'hidden' }}>
           <Document file={resume}>
-            <Page height={resumeHeight} pageNumber={1} onLoadSuccess={removeTextLayerOffset} />
+            <Page height={resumeHeight} pageNumber={1} onLoadSuccess={removeTextLayerOffset} renderAnnotationLayer />
           </Document>
         </div>
         <div className="m-10" />
