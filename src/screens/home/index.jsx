@@ -18,19 +18,19 @@ class HomePage extends Component {
     };
   }
 
-  piTimer = (a) => {
+  piTimer = () => {
     let { fontSpeed } = this.state;
     if (fontSpeed > 50) {
       this.setState({ fontSpeed: fontSpeed * 0.95 });
     }
     setTimeout(() => {
       this.setState({ num: this.state.num + 1 });
-      this.piTimer(a);
+      this.piTimer();
     }, fontSpeed);
   };
 
   componentDidMount() {
-    this.piTimer(this);
+    this.piTimer();
   }
 
   updateFont = (fontSize) => {
@@ -42,10 +42,10 @@ class HomePage extends Component {
     return (
       <div className="full-page">
         <div className="header">
-          <h1 className="title">FUN FACTS CORNER!</h1>
+          <h1 className="header-title">FUN FACTS CORNER!</h1>
         </div>
         <div className="content">
-          <p className="text">
+          <p className="text fact-title">
             I know <a>500</a> digits of PI!
           </p>
           <div className="m-20" />
@@ -53,14 +53,11 @@ class HomePage extends Component {
             <div className="fontBox" onClick={() => this.updateFont(8)}>
               <p className="text font">8px</p>
             </div>
-            <div className="fontBox" onClick={() => this.updateFont(12)}>
-              <p className="text font">12px</p>
+            <div className="fontBox" onClick={() => this.updateFont(16)}>
+              <p className="text font">16px</p>
             </div>
             <div className="fontBox" onClick={() => this.updateFont(24)}>
               <p className="text font">24px</p>
-            </div>
-            <div className="fontBox" onClick={() => this.updateFont(32)}>
-              <p className="text font">32px</p>
             </div>
           </div>
           <div className="PIContainer">
@@ -70,6 +67,7 @@ class HomePage extends Component {
           </div>
           <div className="m-10" />
           <p className="text">I'll save you the trouble. It'll overflow no matter how wide your monitor is.</p>
+          {/* <p>TEST</p> */}
         </div>
       </div>
     );

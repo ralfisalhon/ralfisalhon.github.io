@@ -66,15 +66,10 @@
   font-size: 24px;
 }
 
-.PIContainer {
-  /* height: 3vh; */
-  /* display: flex;
-  align-items: center; */
-}
-
-.title {
+.header-title {
   color: coral;
 }
 
-.fullscreen {
+.fact-title {
+  font-size: 32px;
 }
