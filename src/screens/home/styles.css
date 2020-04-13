@@ -22,30 +22,45 @@
 
 .text {
   font-size: 32px;
-  color: coral;
+  color: azure;
+  margin: 0px;
+  padding: 0px;
 }
 
 .PI {
   font-size: 12px;
   color: coral;
+  margin: 0px;
+  padding: 0px;
 }
 
 .fonts {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.m-20 {
+  height: 20px;
 }
 
 .fontBox {
   border-style: solid;
   border-width: 1;
-  border-color: coral;
-  padding-right: 30px;
-  padding-left: 30px;
+  border-color: azure;
+  padding: 10px 40px 10px 40px;
   background-color: #2b2c2c;
   border-radius: 10px;
+  cursor: pointer;
+  margin-right: 2.5%;
 }
 
 .font {
   font-size: 24px;
+}
+
+.PIContainer {
+  height: 3vh;
+  display: flex;
+  align-items: center;
 }
