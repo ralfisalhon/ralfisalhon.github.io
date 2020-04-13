@@ -54,3 +54,12 @@
   border-radius: 100px;
   min-width: 75px;
 }
+
+a {
+  color: 'black';
+  text-decoration-color: coral;
+}
+
+a:visited {
+  color: black;
+}

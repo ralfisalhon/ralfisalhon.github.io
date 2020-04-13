@@ -59,7 +59,11 @@ class PICounter extends Component {
         </div>
         <div className="m-10" />
         <p className="text">
-          I <u>made an app</u> to practice it if you want to give it a go.
+          I{' '}
+          <a href="https://github.com/ralfisalhon/piGame" target="_blank" rel="noopener noreferrer">
+            made an app
+          </a>{' '}
+          to practice it if you want to give it a go.
         </p>
       </div>
     );
