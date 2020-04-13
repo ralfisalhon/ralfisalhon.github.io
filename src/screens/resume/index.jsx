@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import resume from '../../assets/pdf/RRS_Resume_Mar_2020_V2.pdf';
 import Line from '../../components/Line';
-
 import './AnnotationLayer.css';
-
 import './styles.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 

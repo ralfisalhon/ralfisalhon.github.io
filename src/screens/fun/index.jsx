@@ -14,6 +14,9 @@ class FunFactsPage extends Component {
         <PICounter />
         <Line />
         <AlphabetRecord />
+        <Line />
+        <p className="text fact-title">> I've been playing the piano for 14 years</p>
+        <div className="m-10" />
       </div>
     );
   }
