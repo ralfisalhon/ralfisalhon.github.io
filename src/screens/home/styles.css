@@ -8,9 +8,12 @@
 }
 
 .header {
+  display: flex;
   height: 15%;
   width: 100vw;
   background-color: #2b2c2c;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -18,10 +21,11 @@
   width: 100vw;
   background-color: #2d2e2e;
   padding: 20px;
+  overflow: hidden;
 }
 
 .text {
-  font-size: 32px;
+  font-size: 24px;
   color: azure;
   margin: 0px;
   padding: 0px;
@@ -43,6 +47,9 @@
 .m-20 {
   height: 20px;
 }
+.m-10 {
+  height: 10px;
+}
 
 .fontBox {
   border-style: solid;
@@ -60,7 +67,14 @@
 }
 
 .PIContainer {
-  height: 3vh;
-  display: flex;
-  align-items: center;
+  /* height: 3vh; */
+  /* display: flex;
+  align-items: center; */
+}
+
+.title {
+  color: coral;
+}
+
+.fullscreen {
 }
