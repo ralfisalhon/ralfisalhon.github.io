@@ -18,7 +18,7 @@ class PICounter extends Component {
   piTimer = () => {
     let { fontSpeed } = this.state;
     if (fontSpeed > 50) {
-      this.setState({ fontSpeed: fontSpeed * 0.95 });
+      this.setState({ fontSpeed: fontSpeed * 0.98 });
     }
     setTimeout(() => {
       this.setState({ num: this.state.num + 1 });
@@ -30,17 +30,15 @@ class PICounter extends Component {
     this.piTimer();
   }
 
-  updateFont = (fontSize) => {
-    this.setState({ fontSize });
-  };
+  // updateFont = (fontSize) => {
+  //   this.setState({ fontSize });
+  // };
 
   render() {
     const { num, fontSize } = this.state;
     return (
       <div>
-        <p className="text fact-title">
-          I know <a>500</a> digits of PI!
-        </p>
+        <p className="text fact-title">I know 500 digits of π!</p>
         <div className="m-10" />
         {/* <div className="fonts">
           <div className="fontBox" onClick={() => this.updateFont(8)}>
@@ -54,13 +52,15 @@ class PICounter extends Component {
           </div>
         </div> */}
         <div className="PIContainer">
-          <p className="PI" style={{ fontSize: fontSize.toString() + 'px' }}>
+          <p className="PI">
             <b>3.14</b>
             {PI.substr(4, num)}
           </p>
         </div>
         <div className="m-10" />
-        {/* <p className="text">I'll save you the wait, it'll overflow no matter how wide your monitor is.</p> */}
+        <p className="text">
+          I <u>made an app</u> to practice it if you want to give it a go.
+        </p>
       </div>
     );
   }

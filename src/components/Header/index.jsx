@@ -9,6 +9,7 @@ class Header extends Component {
     return (
       <div>
         <img className="avatar" alt="avatar" src={avatar}></img>
+        <div className="m-10" />
         <h1 className="header-title">Ralfi Salhon</h1>
       </div>
     );

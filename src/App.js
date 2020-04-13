@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import HomePage from './screens/home';
+import FunFactsPage from './screens/fun';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 
@@ -21,7 +21,10 @@ class App extends Component {
             </div>
             <div className="content">
               <Route exact path="/">
-                <HomePage />
+                <h1>What</h1>
+              </Route>
+              <Route exact path="/fun">
+                <FunFactsPage />
               </Route>
             </div>
           </div>
