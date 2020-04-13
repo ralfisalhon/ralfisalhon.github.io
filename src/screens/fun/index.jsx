@@ -11,6 +11,7 @@ class FunFactsPage extends Component {
         <h3 className="subtitle">What I do when I'm not coding</h3>
         <Line />
         <PICounter />
+        <Line />
       </div>
     );
   }

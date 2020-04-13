@@ -3,6 +3,9 @@ import './App.css';
 import FunFactsPage from './screens/fun';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
+import HomePage from './screens/home';
+import ResumePage from './screens/resume';
+// import NotFound from './screens/404';
 
 // const isMobile = window.innerWidth <= 500;
 class App extends Component {
@@ -20,12 +23,10 @@ class App extends Component {
               <Header />
             </div>
             <div className="content">
-              <Route exact path="/">
-                <h1>What</h1>
-              </Route>
-              <Route exact path="/fun">
-                <FunFactsPage />
-              </Route>
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/fun" component={FunFactsPage} />
+              <Route exact path="/resume" component={ResumePage} />
+              {/* <Route component={NotFound} /> */}
             </div>
           </div>
         </Switch>

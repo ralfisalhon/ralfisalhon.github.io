@@ -19,6 +19,14 @@
   font-size: 18px;
 }
 
+.header-text {
+  color: azure;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
 .full-page {
   display: flex;
   flex-direction: column;
@@ -34,14 +42,11 @@
   min-width: 100px;
   min-height: 100vh;
   background-color: #181818;
-  text-align: center;
   flex-direction: column;
-  align-items: center;
-  padding-top: calc(15vw * 0.15);
 }
 
 .content {
-  min-height: 100vh;
+  min-height: calc(100vh - 100);
   width: 100vw;
   background-color: #f2f2f2;
   padding: 50px 50px 50px 50px;
@@ -53,13 +58,4 @@
   height: auto;
   border-radius: 100px;
   min-width: 75px;
-}
-
-a {
-  color: 'black';
-  text-decoration-color: coral;
-}
-
-a:visited {
-  color: black;
 }

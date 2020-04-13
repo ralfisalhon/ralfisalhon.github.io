@@ -16,12 +16,13 @@ class PICounter extends Component {
   }
 
   piTimer = () => {
-    let { fontSpeed } = this.state;
+    let { fontSpeed, num } = this.state;
+    if (num >= PI.length) return;
     if (fontSpeed > 50) {
       this.setState({ fontSpeed: fontSpeed * 0.98 });
     }
     setTimeout(() => {
-      this.setState({ num: this.state.num + 1 });
+      this.setState({ num: num + 1 });
       this.piTimer();
     }, fontSpeed);
   };
@@ -30,27 +31,12 @@ class PICounter extends Component {
     this.piTimer();
   }
 
-  // updateFont = (fontSize) => {
-  //   this.setState({ fontSize });
-  // };
-
   render() {
     const { num, fontSize } = this.state;
     return (
       <div>
-        <p className="text fact-title">I know 500 digits of π!</p>
+        <p className="text">I know 500 digits of π!</p>
         <div className="m-10" />
-        {/* <div className="fonts">
-          <div className="fontBox" onClick={() => this.updateFont(8)}>
-            <p className="text font">8px</p>
-          </div>
-          <div className="fontBox" onClick={() => this.updateFont(16)}>
-            <p className="text font">16px</p>
-          </div>
-          <div className="fontBox" onClick={() => this.updateFont(24)}>
-            <p className="text font">24px</p>
-          </div>
-        </div> */}
         <div className="PIContainer">
           <p className="PI">
             <b>3.14</b>
@@ -63,7 +49,7 @@ class PICounter extends Component {
           <a href="https://github.com/ralfisalhon/piGame" target="_blank" rel="noopener noreferrer">
             made an app
           </a>{' '}
-          to practice it if you want to give it a go.
+          to practice it as well.
         </p>
       </div>
     );
