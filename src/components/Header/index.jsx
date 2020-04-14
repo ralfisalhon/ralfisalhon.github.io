@@ -35,22 +35,31 @@ class Header extends Component {
             <a className="text header-text" href="/projects/web">
               Web Projects
             </a>
+            <a className="text header-text" href="/teach">
+              Teaching Material
+            </a>
             <a className="text header-text" href="/fun">
               Fun Facts
             </a>
           </div>
         </div>
         <div className="footer">
-          <div className="social">
+          <div className="social" onClick={() => window.open('https://www.linkedin.com/in/ralfisalhon/')}>
             <img src={LinkedInLogo} alt="LinkedIn Logo" />
           </div>
-          <div className="social">
+          <div className="social" onClick={() => window.open('https://github.com/ralfisalhon')}>
             <img src={GithubLogo} alt="Github Logo" />
           </div>
-          <div className="social">
+          <div
+            className="social"
+            onClick={() => window.open('https://open.spotify.com/user/pnoig1591pjau15ah9ja412k6')}
+          >
             <img src={SpotifyLogo} alt="Spotify Logo" />
           </div>
-          <div className="social">
+          <div
+            className="social"
+            onClick={() => window.open('https://www.youtube.com/channel/UCZOm0qLlSm19QyvAc_rsOmQ?view_as=subscriber')}
+          >
             <img src={YoutubeLogo} alt="Youtube Logo" />
           </div>
         </div>
