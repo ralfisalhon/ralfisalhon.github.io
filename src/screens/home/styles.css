@@ -1,0 +1,23 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.round_icon {
+  width: auto;
+  height: auto;
+  min-width: 75px;
+  max-width: 150px;
+  -webkit-filter: drop-shadow(4px 4px 4px gray);
+  filter: drop-shadow(4px 4px 4px gray);
+}
+
+.spinner {
+  position: absolute;
+}
+
+.centertext {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}

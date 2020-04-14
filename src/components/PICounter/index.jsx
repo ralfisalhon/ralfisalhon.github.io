@@ -34,7 +34,7 @@ class PICounter extends Component {
     const { num } = this.state;
     return (
       <div>
-        <p className="text fact-title">> I know 500 digits of π!</p>
+        <p className="text fact-title">> I know 500 digits of π</p>
         <div className="m-10" />
         <div className="PIContainer">
           <p className="PI">

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import HomePage from './screens/home';
 import ResumePage from './screens/resume';
+import ProjectsPage from './screens/projects';
 // import NotFound from './screens/404';
 
 // const isMobile = window.innerWidth <= 500;
@@ -24,8 +25,9 @@ class App extends Component {
             </div>
             <div className="content">
               <Route exact path="/" component={HomePage} />
-              <Route exact path="/fun" component={FunFactsPage} />
               <Route exact path="/resume" component={ResumePage} />
+              <Route exact path="/projects" component={ProjectsPage} />
+              <Route exact path="/fun" component={FunFactsPage} />
               {/* <Route component={NotFound} /> */}
             </div>
           </div>

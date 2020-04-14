@@ -9,7 +9,7 @@ class AlphabetRecord extends Component {
     super();
     this.state = {
       num: 1,
-      fontSpeed: 145,
+      fontSpeed: 140,
     };
   }
 
@@ -42,13 +42,17 @@ class AlphabetRecord extends Component {
           <p className="PI">{ALPHABET.substr(0, num)}</p>
         </div>
         <div className="m-10" />
-        <p className="text">
-          I can type the alphabet in{' '}
-          <a href="https://www.youtube.com/watch?v=Mo094dNblBc" target="_blank" rel="noopener noreferrer">
-            3.777 seconds
-          </a>{' '}
-          on my Pixel 3.
-        </p>
+        <p className="text">Watch me type the alphabet in 3.777 seconds on my Pixel 3:</p>
+        <div className="m-10" />
+        <iframe
+          title="video"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/Mo094dNblBc"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     );
   }

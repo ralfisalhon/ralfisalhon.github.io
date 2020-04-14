@@ -6,16 +6,37 @@
 .header-text {
   color: #f2f2f2 !important;
   text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .header-content {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  height: 100%;
+  max-height: 95vh;
 }
 
 .navBar {
   display: flex;
   flex-direction: column;
-  /* padding: 20px; */
+  justify-content: center;
+  height: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 1vw;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
