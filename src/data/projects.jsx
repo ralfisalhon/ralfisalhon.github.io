@@ -110,7 +110,7 @@ const projects = {
     name: 'iGurme',
     logo: igurmeLogo,
     color: 'chocolate',
-    title: 'An e-commerce app designed for testing SDK features.',
+    title: 'An e-commerce app designed to test SDK features.',
     description:
       'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
