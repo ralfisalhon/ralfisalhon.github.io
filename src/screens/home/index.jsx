@@ -40,7 +40,7 @@ class HomePage extends Component {
               className="round_icon"
               alt="app_icon"
               src={coverlove}
-              onClick={() => (window.location.href = '/projects/mobile/coverlove')}
+              onClick={() => (window.location.href = '/projects/coverlove')}
             />
             <p className="text small m--5">coverlove</p>
           </div>
@@ -49,7 +49,7 @@ class HomePage extends Component {
               className="round_icon"
               alt="app_icon"
               src={jamblr}
-              onClick={() => (window.location.href = '/projects/mobile/jamblr')}
+              onClick={() => (window.location.href = '/projects/jamblr')}
             />
             <p className="text small m--5">Jamblr</p>
           </div>
@@ -58,7 +58,7 @@ class HomePage extends Component {
               className="round_icon"
               alt="app_icon"
               src={polysentry}
-              onClick={() => (window.location.href = '/projects/mobile/polysentry')}
+              onClick={() => (window.location.href = '/projects/polysentry')}
             />
             <p className="text small m--5">Polysentry</p>
           </div>
@@ -67,7 +67,7 @@ class HomePage extends Component {
               className="round_icon"
               alt="app_icon"
               src={redorblue}
-              onClick={() => (window.location.href = '/projects/web/redorblue')}
+              onClick={() => (window.location.href = '/projects/redorblue')}
             />
             <p className="text small m--5">Red or Blue</p>
           </div>
@@ -76,7 +76,7 @@ class HomePage extends Component {
               className="round_icon"
               alt="app_icon"
               src={potencia}
-              onClick={() => (window.location.href = '/projects/mobile/potencia')}
+              onClick={() => (window.location.href = '/projects/potencia')}
             />
             <p className="text small m--5">Potencia</p>
           </div>
@@ -85,7 +85,7 @@ class HomePage extends Component {
               className="round_icon"
               alt="app_icon"
               src={hearo}
-              onClick={() => (window.location.href = '/projects/mobile/hearo')}
+              onClick={() => (window.location.href = '/projects/hearo')}
             />
             <p className="text small m--5">Hearo</p>
           </div>
@@ -94,7 +94,7 @@ class HomePage extends Component {
               className="round_icon"
               alt="app_icon"
               src={tunewise}
-              onClick={() => (window.location.href = '/projects/mobile/tunewise')}
+              onClick={() => (window.location.href = '/projects/tunewise')}
             />
             <p className="text small m--5">TuneWise</p>
           </div>
@@ -103,7 +103,7 @@ class HomePage extends Component {
               className="round_icon"
               alt="app_icon"
               src={igurme}
-              onClick={() => (window.location.href = '/projects/mobile/igurme')}
+              onClick={() => (window.location.href = '/projects/igurme')}
             />
             <p className="text small m--5">iGurme</p>
           </div>
