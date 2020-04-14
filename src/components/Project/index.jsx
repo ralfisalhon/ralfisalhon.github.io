@@ -23,7 +23,29 @@ class Project extends Component {
         </div>
         <div className="m-20" />
         <center>
-          <p className="text">{description}</p>
+          {Array.isArray(description) ? (
+            description.map((desc) => (
+              <div style={{ marginBottom: '10px' }}>
+                <p className="text">{desc}</p>
+              </div>
+            ))
+          ) : (
+            <p className="text">{description}</p>
+          )}
+          {video && (
+            <div>
+              <div className="m-20" />
+              <iframe
+                title="video"
+                width={window.innerWidth * 0.5}
+                height={window.innerWidth * 0.5 * 0.56}
+                src={video}
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </div>
+          )}
         </center>
       </div>
     );

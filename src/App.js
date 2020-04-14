@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Project from './components/Project';
+import SmallProject from './components/SmallProject';
 
 import HomePage from './screens/home';
 import ResumePage from './screens/resume';
@@ -49,7 +50,13 @@ class App extends Component {
                 </ProjectsPage>
               </Route>
               <Route exact path="/projects">
-                <p className="text">All projects page</p>
+                <div className="all-projects">
+                  {Object.keys(projects).map((key) => (
+                    <div onClick={() => (window.location.href = '/projects/' + key)}>
+                      <SmallProject logo={projects[key].logo} color={projects[key].color} name={projects[key].name} />
+                    </div>
+                  ))}
+                </div>
               </Route>
               <Route exact path="/teach" component={TeachingPage} />
               <Route exact path="/fun" component={FunFactsPage} />
