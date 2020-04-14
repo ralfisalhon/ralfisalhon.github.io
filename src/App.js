@@ -35,6 +35,7 @@ class App extends Component {
                   <Route path="/projects/redorblue">
                     <Project
                       logo={projects.redorblue.logo}
+                      color={projects.redorblue.color}
                       title={projects.redorblue.title}
                       name={projects.redorblue.name}
                       description={projects.redorblue.description}
@@ -46,6 +47,7 @@ class App extends Component {
                   <Route path="/projects/hearo">
                     <Project
                       logo={projects.hearo.logo}
+                      color={projects.hearo.color}
                       title={projects.hearo.title}
                       name={projects.hearo.name}
                       description={projects.hearo.description}
@@ -57,6 +59,7 @@ class App extends Component {
                   <Route path="/projects/jamblr">
                     <Project
                       logo={projects.jamblr.logo}
+                      color={projects.jamblr.color}
                       title={projects.jamblr.title}
                       name={projects.jamblr.name}
                       description={projects.jamblr.description}
@@ -68,6 +71,7 @@ class App extends Component {
                   <Route path="/projects/coverlove">
                     <Project
                       logo={projects.coverlove.logo}
+                      color={projects.coverlove.color}
                       title={projects.coverlove.title}
                       name={projects.coverlove.name}
                       description={projects.coverlove.description}
@@ -79,6 +83,7 @@ class App extends Component {
                   <Route path="/projects/polysentry">
                     <Project
                       logo={projects.polysentry.logo}
+                      color={projects.polysentry.color}
                       title={projects.polysentry.title}
                       name={projects.polysentry.name}
                       description={projects.polysentry.description}
@@ -90,6 +95,7 @@ class App extends Component {
                   <Route path="/projects/tunewise">
                     <Project
                       logo={projects.tunewise.logo}
+                      color={projects.tunewise.color}
                       title={projects.tunewise.title}
                       name={projects.tunewise.name}
                       description={projects.tunewise.description}
@@ -101,6 +107,7 @@ class App extends Component {
                   <Route path="/projects/potencia">
                     <Project
                       logo={projects.potencia.logo}
+                      color={projects.potencia.color}
                       title={projects.potencia.title}
                       name={projects.potencia.name}
                       description={projects.potencia.description}
@@ -112,6 +119,7 @@ class App extends Component {
                   <Route path="/projects/igurme">
                     <Project
                       logo={projects.igurme.logo}
+                      color={projects.igurme.color}
                       title={projects.igurme.title}
                       name={projects.igurme.name}
                       description={projects.igurme.description}

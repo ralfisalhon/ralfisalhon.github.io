@@ -60,7 +60,7 @@ class HomePage extends Component {
               src={polysentry}
               onClick={() => (window.location.href = '/projects/polysentry')}
             />
-            <p className="text small m--5">Polysentry</p>
+            <p className="text small m--5">PolySentry</p>
           </div>
           <div className="item item-4">
             <img

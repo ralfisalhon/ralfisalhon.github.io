@@ -33,15 +33,8 @@ class Header extends Component {
             <a className="text header-text" href="/resume" style={url === '/resume' ? selectStyle : {}}>
               Resume
             </a>
-            <a
-              className="text header-text"
-              href="/projects/mobile"
-              style={url === '/projects/mobile' ? selectStyle : {}}
-            >
-              Mobile Projects
-            </a>
-            <a className="text header-text" href="/projects/web" style={url === '/projects/web' ? selectStyle : {}}>
-              Web Projects
+            <a className="text header-text" href="/projects" style={url === '/projects' ? selectStyle : {}}>
+              Projects
             </a>
             <a className="text header-text" href="/teach" style={url === '/teach' ? selectStyle : {}}>
               Teaching Material

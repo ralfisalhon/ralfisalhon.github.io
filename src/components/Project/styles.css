@@ -1,7 +1,6 @@
 .catchPhraseContainer {
   display: flex;
   flex-direction: column;
-  background-color: coral;
   padding: 4vh 8vw 4vh 8vw;
   border-radius: 20px;
 }
@@ -22,6 +21,11 @@
 
 .verticalCenter {
   display: flex;
-  height: '100%';
+  height: 100%;
   align-items: center;
+  width: 100%;
+}
+
+.right {
+  margin-left: auto;
 }
