@@ -10,6 +10,10 @@ import SpotifyLogo from '../../assets/svg/spotify.svg';
 
 class Header extends Component {
   render() {
+    const url = window.location.pathname;
+    const selectStyle = { borderBottom: '2px solid white', paddingBottom: '4px' };
+    // alert(url);
+
     return (
       <div className="header-content">
         <div className="m-20" />
@@ -23,22 +27,26 @@ class Header extends Component {
         <div className="m-10" />
         <div className="flexCenter">
           <div className="navBar">
-            <a className="text header-text" href="/">
+            <a className="text header-text" href="/" style={url === '/' ? selectStyle : {}}>
               Home
             </a>
-            <a className="text header-text" href="/resume">
+            <a className="text header-text" href="/resume" style={url === '/resume' ? selectStyle : {}}>
               Resume
             </a>
-            <a className="text header-text" href="/projects/mobile">
+            <a
+              className="text header-text"
+              href="/projects/mobile"
+              style={url === '/projects/mobile' ? selectStyle : {}}
+            >
               Mobile Projects
             </a>
-            <a className="text header-text" href="/projects/web">
+            <a className="text header-text" href="/projects/web" style={url === '/projects/web' ? selectStyle : {}}>
               Web Projects
             </a>
-            <a className="text header-text" href="/teach">
+            <a className="text header-text" href="/teach" style={url === '/teach' ? selectStyle : {}}>
               Teaching Material
             </a>
-            <a className="text header-text" href="/fun">
+            <a className="text header-text" href="/fun" style={url === '/fun' ? selectStyle : {}}>
               Fun Facts
             </a>
           </div>

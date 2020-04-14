@@ -14,7 +14,7 @@ import tunewise from '../../assets/images/round_icons/tunewise.png';
 class HomePage extends Component {
   render() {
     return (
-      <div className="homeBody">
+      <div className="homeBody fade-in">
         <div className="centertext">
           <h1 className="text">Hi, my name is Ralfi.</h1>
           <div className="m-5" />
