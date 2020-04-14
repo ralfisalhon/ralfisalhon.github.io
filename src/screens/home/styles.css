@@ -20,12 +20,12 @@
 .centertext {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: calc(50% + 5vw);
   transform: translate(-50%, -50%);
 }
 
 :root {
-  --duration: 40000ms;
+  --duration: 60s;
 }
 
 body,
@@ -42,14 +42,14 @@ body {
 }
 
 .base {
-  border-radius: 45vh;
-  width: 90vh;
-  height: 90vh;
+  border-radius: 44vh;
+  width: 88vh;
+  height: 88vh;
   position: absolute;
-  left: 50%;
-  margin-left: -45vh;
+  left: calc(50% + 5vw);
+  margin-left: -44vh;
   top: 50%;
-  margin-top: -45vh;
+  margin-top: -44vh;
 
   -webkit-animation-name: spin;
   -webkit-animation-duration: var(--duration);
