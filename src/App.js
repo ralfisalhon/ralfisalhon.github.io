@@ -26,8 +26,8 @@ class App extends Component {
             <div className="content">
               <Route exact path="/" component={HomePage} />
               <Route exact path="/resume" component={ResumePage} />
-              <Route exact path="/projects/mobile" component={MobileProjectsPage} />
-              <Route exact path="/projects/web" component={WebProjectsPage} />
+              <Route path="/projects/mobile" component={MobileProjectsPage} />
+              <Route path="/projects/web" component={WebProjectsPage} />
               <Route exact path="/fun" component={FunFactsPage} />
               {/* <Route component={NotFound} /> */}
             </div>

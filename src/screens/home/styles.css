@@ -5,12 +5,11 @@
 }
 
 .round_icon {
-  width: auto;
-  height: auto;
-  min-width: 75px;
-  max-width: 150px;
+  width: 100px;
+  height: 100px;
   -webkit-filter: drop-shadow(4px 4px 4px gray);
   filter: drop-shadow(4px 4px 4px gray);
+  cursor: pointer;
 }
 
 .spinner {
@@ -28,28 +27,19 @@
   --duration: 60s;
 }
 
-body,
-.item {
-  background-image: url('https://threejs.org/examples/textures/UV_Grid_Sm.jpg');
-  background-size: cover;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
+.homeBody {
 }
 
 .base {
-  border-radius: 44vh;
-  width: 88vh;
-  height: 88vh;
+  border-radius: 42vh;
+  width: 84vh;
+  height: 84vh;
   position: absolute;
   left: calc(50% + 5vw);
-  margin-left: -44vh;
+  margin-left: -42vh;
   top: 50%;
-  margin-top: -44vh;
+  margin-top: -42vh;
+  /* border: 1px solid black; */
 
   -webkit-animation-name: spin;
   -webkit-animation-duration: var(--duration);
@@ -106,17 +96,22 @@ body {
 }
 
 .base:hover .item {
-  -webkit-animation-play-state: paused;
+  /* -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
-  animation-play-state: paused;
+  animation-play-state: paused; */
+  opacity: 0.5;
+}
+
+.item:hover {
+  opacity: 1 !important;
 }
 
 .base:hover {
-  -webkit-animation-play-state: paused;
+  /* -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
-  animation-play-state: paused;
+  animation-play-state: paused; */
 }
 
 .item-1 {
