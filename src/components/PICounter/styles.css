@@ -32,8 +32,9 @@
 }
 
 a {
-  color: 'black';
-  text-decoration-color: coral;
+  color: black;
+  border-bottom: 1px solid coral; /* Or whatever color you want */
+  text-decoration: none;
 }
 
 a:visited {

@@ -12,10 +12,6 @@
   cursor: pointer;
 }
 
-.spinner {
-  position: absolute;
-}
-
 .centertext {
   position: absolute;
   top: 50%;
@@ -27,18 +23,19 @@
   --duration: 60s;
 }
 
-.homeBody {
+.after-spin {
+  margin-top: 100vh;
 }
 
 .base {
-  border-radius: 42vh;
-  width: 84vh;
-  height: 84vh;
+  border-radius: 44vh;
+  width: 88vh;
+  height: 88vh;
   position: absolute;
   left: calc(50% + 5vw);
-  margin-left: -42vh;
+  margin-left: -44vh;
   top: 50%;
-  margin-top: -42vh;
+  margin-top: -45vh;
   /* border: 1px solid black; */
 
   -webkit-animation-name: spin;
@@ -107,12 +104,12 @@
   opacity: 1 !important;
 }
 
-.base:hover {
-  /* -webkit-animation-play-state: paused;
+/* .base:hover {
+  -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
-  animation-play-state: paused; */
-}
+  animation-play-state: paused;
+} */
 
 .item-1 {
   top: calc(50% - 50px);

@@ -28,6 +28,7 @@
 
 .header-text {
   color: azure;
+  border-bottom: 1px solid gray;
 }
 
 .subtitle {
@@ -65,4 +66,9 @@
   height: auto;
   border-radius: 100px;
   min-width: 75px;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
 }

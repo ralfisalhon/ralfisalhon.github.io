@@ -19,6 +19,20 @@ class HomePage extends Component {
           <h1 className="text">Hi, my name is Ralfi.</h1>
           <div className="m-5" />
           <p className="text">I develop great looking mobile & web apps.</p>
+          <div className="m-10" />
+          <div className="flexRow">
+            <code>
+              {'<'}
+              <a href="/resume">Resume</a>
+              {'/>'}
+            </code>
+            <div style={{ width: '10px' }} />
+            <code>
+              {'<'}
+              <a href="/resume">Contact</a>
+              {'/>'}
+            </code>
+          </div>
         </div>
         <div className="base">
           <div className="item item-1">
@@ -94,12 +108,15 @@ class HomePage extends Component {
             <p className="text small m--5">iGurme</p>
           </div>
         </div>
-        {/* <div class="base">
-          <div class="item red a1">1</div>
-          <div class="item green a2">2</div>
-          <div class="item blue a3">3</div>
-          <div class="item magenta a4">4</div>
-        </div> */}
+        <div className="after-spin">
+          <p className="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+        </div>
       </div>
     );
   }
