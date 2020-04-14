@@ -20,7 +20,7 @@ class ResumePage extends Component {
   render() {
     const resumeHeight = window.innerHeight * 1.25;
     return (
-      <div>
+      <div className="resume-page">
         <h1 className="no-margin">My Resume</h1>
         <div className="m-5" />
         <h3 className="subtitle">Last updated: March 2020</h3>

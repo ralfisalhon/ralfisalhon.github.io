@@ -29,7 +29,7 @@ class HomePage extends Component {
             <div style={{ width: '10px' }} />
             <code>
               {'<'}
-              <a href="/resume">Contact</a>
+              <a href="mailto:ralfisalhon@gmail.com">Contact</a>
               {'/>'}
             </code>
           </div>
