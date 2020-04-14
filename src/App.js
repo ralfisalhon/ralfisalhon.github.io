@@ -35,6 +35,7 @@ class App extends Component {
                   <Route path="/projects/redorblue">
                     <Project
                       logo={projects.redorblue.logo}
+                      title={projects.redorblue.title}
                       name={projects.redorblue.name}
                       description={projects.redorblue.description}
                       awards={projects.redorblue.awards}
@@ -45,6 +46,7 @@ class App extends Component {
                   <Route path="/projects/hearo">
                     <Project
                       logo={projects.hearo.logo}
+                      title={projects.hearo.title}
                       name={projects.hearo.name}
                       description={projects.hearo.description}
                       awards={projects.hearo.awards}
@@ -55,6 +57,7 @@ class App extends Component {
                   <Route path="/projects/jamblr">
                     <Project
                       logo={projects.jamblr.logo}
+                      title={projects.jamblr.title}
                       name={projects.jamblr.name}
                       description={projects.jamblr.description}
                       awards={projects.jamblr.awards}
@@ -65,6 +68,7 @@ class App extends Component {
                   <Route path="/projects/coverlove">
                     <Project
                       logo={projects.coverlove.logo}
+                      title={projects.coverlove.title}
                       name={projects.coverlove.name}
                       description={projects.coverlove.description}
                       awards={projects.coverlove.awards}
@@ -75,6 +79,7 @@ class App extends Component {
                   <Route path="/projects/polysentry">
                     <Project
                       logo={projects.polysentry.logo}
+                      title={projects.polysentry.title}
                       name={projects.polysentry.name}
                       description={projects.polysentry.description}
                       awards={projects.polysentry.awards}
@@ -85,6 +90,7 @@ class App extends Component {
                   <Route path="/projects/tunewise">
                     <Project
                       logo={projects.tunewise.logo}
+                      title={projects.tunewise.title}
                       name={projects.tunewise.name}
                       description={projects.tunewise.description}
                       awards={projects.tunewise.awards}
@@ -95,6 +101,7 @@ class App extends Component {
                   <Route path="/projects/potencia">
                     <Project
                       logo={projects.potencia.logo}
+                      title={projects.potencia.title}
                       name={projects.potencia.name}
                       description={projects.potencia.description}
                       awards={projects.potencia.awards}
@@ -105,6 +112,7 @@ class App extends Component {
                   <Route path="/projects/igurme">
                     <Project
                       logo={projects.igurme.logo}
+                      title={projects.igurme.title}
                       name={projects.igurme.name}
                       description={projects.igurme.description}
                       awards={projects.igurme.awards}
@@ -113,6 +121,9 @@ class App extends Component {
                     />
                   </Route>
                 </ProjectsPage>
+              </Route>
+              <Route exact path="/projects">
+                <p className="text">All projects page</p>
               </Route>
               <Route exact path="/teach" component={TeachingPage} />
               <Route exact path="/fun" component={FunFactsPage} />

@@ -1,6 +1,27 @@
-.line {
-  width: 100%;
-  background-color: lightgray;
-  height: 1px;
-  margin: 20px 0px 20px 0px;
+.catchPhraseContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: coral;
+  padding: 4vh 8vw 4vh 8vw;
+  border-radius: 20px;
+}
+
+.catchPhrase {
+  font-size: 64px;
+  margin-right: 100px;
+}
+
+.logo {
+  width: 20vh;
+  height: 20vh;
+}
+
+.whiteText {
+  color: white;
+}
+
+.verticalCenter {
+  display: flex;
+  height: '100%';
+  align-items: center;
 }

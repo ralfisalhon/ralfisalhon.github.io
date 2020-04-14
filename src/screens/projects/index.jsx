@@ -5,7 +5,9 @@ class MobileProjectsPage extends Component {
   render() {
     return (
       <div>
-        <h1>Projects</h1>
+        <h1 className="cursor" onClick={() => (window.location.pathname = '/projects')}>
+          Projects
+        </h1>
         <div className="m-5" />
         <h3 className="subtitle">This page is in progress...</h3>
         <Line />

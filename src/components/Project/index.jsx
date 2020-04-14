@@ -5,26 +5,35 @@ import PropTypes from 'prop-types';
 
 class Project extends Component {
   render() {
-    const { logo, name, description, awards, platforms, video } = this.props;
+    const { logo, name, title, description, awards, platforms, video } = this.props;
     return (
       <div className="project">
-        <h1>{name}</h1>
-        <div className="m-10" />
-        <img src={logo} alt="logo" />
-        <p className="text">{description}</p>
-        <p className="text">{awards}</p>
-        <p className="text">{platforms && Object.keys(platforms)}</p>
-        <p className="text">{video}</p>
+        <div className="catchPhraseContainer">
+          <div className="flexRow">
+            <div className="verticalCenter">
+              <h1 className="catchPhrase whiteText">{title}</h1>
+
+              <div className="m-20" />
+              <center>
+                <img className="logo" src={logo} alt="logo" />
+                <h1 className="whiteText">{name}</h1>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div className="m-20" />
+        <center>
+          <p className="text">{description}</p>
+        </center>
       </div>
     );
   }
 }
 
 Project.propTypes = {
-  authorImage: PropTypes.string,
-  authorName: PropTypes.string,
   logo: PropTypes.string,
   name: PropTypes.string,
+  title: PropTypes.string,
   description: PropTypes.string,
   awards: PropTypes.arrayOf(PropTypes.string),
   platforms: PropTypes.objectOf(PropTypes.string),
@@ -34,6 +43,7 @@ Project.propTypes = {
 Project.defaultProps = {
   logo: 'https://placehold.it/512',
   name: 'Default Name',
+  title: 'Default Title',
   description: 'Default Description',
   awards: null,
   platforms: null,
