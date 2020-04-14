@@ -18,6 +18,179 @@
 }
 
 .centertext {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+:root {
+  --duration: 40000ms;
+}
+
+body,
+.item {
+  background-image: url('https://threejs.org/examples/textures/UV_Grid_Sm.jpg');
+  background-size: cover;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.base {
+  border-radius: 45vh;
+  width: 90vh;
+  height: 90vh;
+  position: absolute;
+  left: 50%;
+  margin-left: -45vh;
+  top: 50%;
+  margin-top: -45vh;
+
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: var(--duration);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: var(--duration);
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: var(--duration);
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: var(--duration);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  pointer-events: none;
+}
+
+.item {
+  position: absolute;
+  font-family: Arial;
+  font-size: 85px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: var(--duration);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: reverse;
+  -moz-animation-name: spin;
+  -moz-animation-duration: var(--duration);
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -moz-animation-direction: reverse;
+  -ms-animation-name: spin;
+  -ms-animation-duration: var(--duration);
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -ms-animation-direction: reverse;
+
+  animation-name: spin;
+  animation-duration: var(--duration);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+
+  pointer-events: auto;
+}
+
+.base:hover .item {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.base:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.item-1 {
+  top: calc(50% - 50px);
+  left: calc(100% - 100px);
+}
+
+.item-2 {
+  top: 0px;
+  left: calc(50% - 50px);
+}
+
+.item-3 {
+  top: calc(50% - 50px);
+  left: 0px;
+}
+
+.item-4 {
+  top: calc(100% - 100px);
+  left: calc(50% - 50px);
+}
+
+.item-5 {
+  top: calc(84% - 75px);
+  left: calc(84% - 75px);
+}
+
+.item-6 {
+  top: calc(84% - 75px);
+  left: calc(16% - 33px);
+}
+
+.item-7 {
+  top: calc(16% - 33px);
+  left: calc(84% - 75px);
+}
+
+.item-8 {
+  top: calc(16% - 33px);
+  left: calc(16% - 33px);
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
