@@ -7,8 +7,7 @@ import HomePage from './screens/home';
 import ResumePage from './screens/resume';
 import MobileProjectsPage from './screens/projects/mobile';
 import WebProjectsPage from './screens/projects/web';
-// import NotFound from './screens/404';
-// const isMobile = window.innerWidth <= 500;
+
 class App extends Component {
   constructor() {
     super();

@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 import './styles.css';
 
 import avatar from '../../assets/images/avatar.jpg';
+import LinkedInLogo from '../../assets/svg/linkedin.svg';
+import YoutubeLogo from '../../assets/svg/youtube.svg';
+import GithubLogo from '../../assets/svg/github.svg';
+import SpotifyLogo from '../../assets/svg/spotify.svg';
+
 class Header extends Component {
   render() {
     return (
@@ -36,10 +41,18 @@ class Header extends Component {
           </div>
         </div>
         <div className="footer">
-          <h1 className="text header-text">L</h1>
-          <h1 className="text header-text">G</h1>
-          <h1 className="text header-text">S</h1>
-          <h1 className="text header-text">C</h1>
+          <div className="social">
+            <img src={LinkedInLogo} alt="LinkedIn Logo" />
+          </div>
+          <div className="social">
+            <img src={GithubLogo} alt="Github Logo" />
+          </div>
+          <div className="social">
+            <img src={SpotifyLogo} alt="Spotify Logo" />
+          </div>
+          <div className="social">
+            <img src={YoutubeLogo} alt="Youtube Logo" />
+          </div>
         </div>
       </div>
     );

@@ -31,7 +31,7 @@ class ResumePage extends Component {
           </Document>
         </div>
         <div className="m-10" />
-        <a className="text small" href={resume} download>
+        <a className="text small" style={{ borderBottom: '1px solid coral' }} href={resume} download>
           Download PDF
         </a>
       </div>

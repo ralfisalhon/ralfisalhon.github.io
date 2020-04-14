@@ -20,6 +20,8 @@
   padding: 20px;
   height: 100%;
   max-height: 95vh;
+  position: sticky;
+  top: 0;
 }
 
 .navBar {
@@ -39,5 +41,11 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.social {
+  height: auto;
+  width: 20%;
+  opacity: 0.95;
 }
