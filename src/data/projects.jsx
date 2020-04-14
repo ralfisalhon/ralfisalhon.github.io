@@ -6,7 +6,6 @@ import polysentryLogo from '../assets/images/round_icons/polysentry.png';
 import potenciaLogo from '../assets/images/round_icons/potencia.png';
 import redorblueLogo from '../assets/images/round_icons/redorblue.png';
 import tunewiseLogo from '../assets/images/round_icons/tunewise.png';
-import { createPortal } from 'react-dom';
 
 const projects = {
   redorblue: {
@@ -40,7 +39,7 @@ const projects = {
   jamblr: {
     name: 'Jamblr',
     logo: jamblrLogo,
-    color: 'gray',
+    color: '#2f2f2f',
     title: 'Your music discovery and playlist creation platform.',
     description:
       'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
@@ -110,7 +109,7 @@ const projects = {
   igurme: {
     name: 'iGurme',
     logo: igurmeLogo,
-    color: 'coral',
+    color: 'chocolate',
     title: 'An e-commerce app designed for testing SDK features.',
     description:
       'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',

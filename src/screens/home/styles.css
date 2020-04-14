@@ -94,10 +94,10 @@
 }
 
 .base:hover .item {
-  /* -webkit-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
-  animation-play-state: paused; */
+  animation-play-state: paused;
   opacity: 0.5;
 }
 
@@ -105,12 +105,12 @@
   opacity: 1 !important;
 }
 
-/* .base:hover {
+.base:hover {
   -webkit-animation-play-state: paused;
   -moz-animation-play-state: paused;
   -o-animation-play-state: paused;
   animation-play-state: paused;
-} */
+}
 
 .item-1 {
   top: calc(50% - 50px);
