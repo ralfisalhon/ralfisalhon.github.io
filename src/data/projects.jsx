@@ -39,7 +39,7 @@ const projects = {
       github: 'https://github.com/mohsr/red-or-blue',
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
-    video: 'https://www.youtube.com/watch?v=9Tag0OPSJdg&feature=emb_logo',
+    video: 'https://www.youtube.com/embed/QadrLYQTbFI',
   },
   jamblr: {
     name: 'Jamblr',
@@ -53,7 +53,6 @@ const projects = {
       github: 'https://github.com/mohsr/red-or-blue',
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
-    video: 'https://www.youtube.com/watch?v=9Tag0OPSJdg&feature=emb_logo',
   },
   coverlove: {
     name: 'coverlove',
@@ -67,7 +66,6 @@ const projects = {
       github: 'https://github.com/mohsr/red-or-blue',
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
-    video: 'https://www.youtube.com/watch?v=9Tag0OPSJdg&feature=emb_logo',
   },
   polysentry: {
     name: 'PolySentry',
@@ -81,7 +79,6 @@ const projects = {
       github: 'https://github.com/mohsr/red-or-blue',
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
-    video: 'https://www.youtube.com/watch?v=9Tag0OPSJdg&feature=emb_logo',
   },
   tunewise: {
     name: 'TuneWise',
@@ -95,7 +92,6 @@ const projects = {
       github: 'https://github.com/mohsr/red-or-blue',
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
-    video: 'https://www.youtube.com/watch?v=9Tag0OPSJdg&feature=emb_logo',
   },
   potencia: {
     name: 'Potencia',
@@ -109,7 +105,6 @@ const projects = {
       github: 'https://github.com/mohsr/red-or-blue',
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
-    video: 'https://www.youtube.com/watch?v=9Tag0OPSJdg&feature=emb_logo',
   },
   igurme: {
     name: 'iGurme',
@@ -123,7 +118,6 @@ const projects = {
       github: 'https://github.com/mohsr/red-or-blue',
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
-    video: 'https://www.youtube.com/watch?v=9Tag0OPSJdg&feature=emb_logo',
   },
   claimate: {
     name: 'Claimate',
@@ -137,7 +131,7 @@ const projects = {
       github: 'https://github.com/mohsr/red-or-blue',
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
-    video: 'https://www.youtube.com/watch?v=9Tag0OPSJdg&feature=emb_logo',
+    video: 'https://www.youtube.com/embed/3uotkVSIglA',
   },
 };
 

@@ -37,8 +37,8 @@ class Project extends Component {
               <div className="m-20" />
               <iframe
                 title="video"
-                width={window.innerWidth * 0.5}
-                height={window.innerWidth * 0.5 * 0.56}
+                width={window.innerWidth * 0.6}
+                height={window.innerWidth * 0.6 * 0.56}
                 src={video}
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
