@@ -5,13 +5,14 @@ import PropTypes from 'prop-types';
 
 class SmallProject extends Component {
   render() {
-    const { logo, name, title } = this.props.project;
+    const { logo, name, title, techs } = this.props.project;
     return (
       <div className="small-project">
         <img className="logo-small" src={logo} alt="logo" />
         <div className="m-20-left">
           <h1 className="text">{name}</h1>
           <p className="text">{title}</p>
+          {techs && Object.keys(techs).map((platform) => <p className="text">{platform}</p>)}
         </div>
       </div>
     );

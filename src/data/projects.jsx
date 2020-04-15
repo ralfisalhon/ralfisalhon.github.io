@@ -34,10 +34,8 @@ const projects = {
     title: 'Your conference call personal assistant.',
     description:
       'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
     platforms: {
-      github: 'https://github.com/mohsr/red-or-blue',
-      website: 'https://redorbluegame.wixsite.com/redorblue',
+      github: 'https://github.com/ralfisalhon/Hearo-noSensitive',
     },
     video: 'https://www.youtube.com/embed/QadrLYQTbFI',
   },
@@ -46,38 +44,48 @@ const projects = {
     logo: jamblrLogo,
     color: '#2f2f2f',
     title: 'Your music discovery and playlist creation platform.',
-    description:
-      'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
+    description: [
+      'This took a really fun 4 months to make. But it started a lot simpler than that. In fact, we had a working demo in a day.',
+      'Polyhack 2018',
+    ],
+    awards: [' Hubspot Special Award, Polyhack 2018'],
     platforms: {
-      github: 'https://github.com/mohsr/red-or-blue',
-      website: 'https://redorbluegame.wixsite.com/redorblue',
+      github: 'https://github.com/ralfisalhon/jamblr-polyhack2018',
+      appstore: 'https://apps.apple.com/us/app/jamblr-discover-new-music/id1450608022',
     },
+    screenshots: [
+      'https://placehold.it/1334x750',
+      'https://placehold.it/1334x750',
+      'https://placehold.it/1334x750',
+      'https://placehold.it/1334x750',
+      'https://placehold.it/1334x750',
+    ],
   },
   coverlove: {
     name: 'coverlove',
     logo: coverloveLogo,
     color: 'rgb(243, 156, 18)',
     title: 'A simple tool to create new playlist cover art.',
-    description:
-      'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
+    description: [
+      'I made and deployed this app in under 24 hours as a self-hackathon',
+      'To my surprise, it is my most downloaded app ever with over 10k downloads.',
+    ],
     platforms: {
-      github: 'https://github.com/mohsr/red-or-blue',
-      website: 'https://redorbluegame.wixsite.com/redorblue',
+      github: 'https://github.com/ralfisalhon/coverlove',
+      appstore: 'https://apps.apple.com/us/app/coverlove-cover-art-maker/id1458456335',
     },
+    screenshots: ['https://placehold.it/1334x750', 'https://placehold.it/1334x750', 'https://placehold.it/1334x750'],
   },
   polysentry: {
     name: 'PolySentry',
     logo: polysentryLogo,
     color: 'rgb(1, 163, 164)',
     title: 'Security platform that provides real-time threat protection.',
-    description:
-      'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
+    description: 'Some freelance work... Hong Kong',
     platforms: {
-      github: 'https://github.com/mohsr/red-or-blue',
-      website: 'https://redorbluegame.wixsite.com/redorblue',
+      appstore: 'https://apps.apple.com/us/app/polysentry/id1468691133',
+      playstore: 'https://play.google.com/store/apps/details?id=com.polysentry',
+      website: 'https://polysentry.com/',
     },
   },
   tunewise: {
@@ -85,12 +93,11 @@ const projects = {
     logo: tunewiseLogo,
     color: 'rgb(100, 43, 168)',
     title: 'Music centered mobile party game.',
-    description:
-      'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
+    description: 'Get that party on',
+    awards: ['Best Mobile App, Polyhack 2019'],
     platforms: {
-      github: 'https://github.com/mohsr/red-or-blue',
-      website: 'https://redorbluegame.wixsite.com/redorblue',
+      github: 'https://github.com/ralfisalhon/TuneWise',
+      website: 'https://github.com/ralfisalhon/TuneWise-web',
     },
   },
   potencia: {
@@ -98,12 +105,10 @@ const projects = {
     logo: potenciaLogo,
     color: 'rgb(35, 105, 246)',
     title: 'A social outreach and education platform.',
-    description:
-      'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
+    description: 'Free lance work... Somerville',
     platforms: {
-      github: 'https://github.com/mohsr/red-or-blue',
-      website: 'https://redorbluegame.wixsite.com/redorblue',
+      github: 'https://github.com/ralfisalhon/Potentia',
+      website: 'https://www.potenciaus.org/',
     },
   },
   igurme: {
@@ -111,12 +116,9 @@ const projects = {
     logo: igurmeLogo,
     color: 'chocolate',
     title: 'An e-commerce app designed to test SDK features.',
-    description:
-      'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
+    description: 'Insider internship. User by over 10 countries',
     platforms: {
-      github: 'https://github.com/mohsr/red-or-blue',
-      website: 'https://redorbluegame.wixsite.com/redorblue',
+      github: 'https://github.com/ralfisalhon/iGurme-Docs',
     },
   },
   claimate: {
@@ -124,12 +126,11 @@ const projects = {
     logo: claimateLogo,
     color: 'rgb(18, 47, 66)',
     title: 'A Global Legal Hackathon Finalist',
-    description:
-      'LOREM ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    awards: ['Phase 2 Submissions, Boston Festival of Indie Games'],
+    description: 'Done in 48 hours. I slept like 5 hours.',
+    awards: ['2nd Place, Global Legal Hackathon'],
     platforms: {
-      github: 'https://github.com/mohsr/red-or-blue',
-      website: 'https://redorbluegame.wixsite.com/redorblue',
+      github: 'https://github.com/ralfisalhon/CLAIMate',
+      website: 'https://globallegalhackathon.com/',
     },
     video: 'https://www.youtube.com/embed/3uotkVSIglA',
   },

@@ -12,7 +12,6 @@ class Project extends Component {
           <div className="flexRow">
             <div className="verticalCenter">
               <h1 className="catchPhrase whiteText">{title}</h1>
-
               <div className="m-20" />
               <center className="right">
                 <img className="logo" src={logo} alt="logo" />
@@ -22,7 +21,8 @@ class Project extends Component {
           </div>
         </div>
         <div className="m-20" />
-        <center>
+        <div className="m-20" />
+        <center style={{ paddingRight: '5vw', paddingLeft: '5vw' }}>
           {Array.isArray(description) ? (
             description.map((desc) => (
               <div style={{ marginBottom: '10px' }}>
@@ -32,6 +32,7 @@ class Project extends Component {
           ) : (
             <p className="text">{description}</p>
           )}
+          <div className="m-20" />
           {video && (
             <div>
               <div className="m-20" />
