@@ -9,10 +9,13 @@ class SmallProject extends Component {
     return (
       <div className="small-project">
         <img className="logo-small" src={logo} alt="logo" />
-        <div className="m-20-left">
-          <h1 className="text">{name}</h1>
-          <p className="text">{title}</p>
-          {techs && Object.keys(techs).map((platform) => <p className="text">{platform}</p>)}
+        <div className="m-20-left split">
+          <div>
+            <h1 className="text big">{name}</h1>
+            <p className="text">{title}</p>
+          </div>
+          {/* <div className="m-20" />
+          <code className="smaller">{techs}</code> */}
         </div>
       </div>
     );

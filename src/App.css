@@ -26,6 +26,14 @@
   font-size: 14px !important;
 }
 
+.smaller {
+  font-size: 12px !important;
+}
+
+.big {
+  font-size: 30px !important;
+}
+
 .header-text {
   color: azure;
   border-bottom: 1px solid gray;

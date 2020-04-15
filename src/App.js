@@ -13,7 +13,7 @@ import TeachingPage from './screens/teach';
 import FunFactsPage from './screens/fun';
 
 import projects from './data/projects';
-import Line from './components/Line';
+global.isMobile = window.innerWidth <= 500;
 
 class App extends Component {
   constructor() {
@@ -26,9 +26,11 @@ class App extends Component {
       <Router>
         <Switch>
           <div className="full-page">
-            <div className="header">
-              <Header />
-            </div>
+            {!global.isMobile && (
+              <div className="header">
+                <Header />
+              </div>
+            )}
             <div className="content">
               <Route exact path="/" component={HomePage} />
               <Route exact path="/resume" component={ResumePage} />

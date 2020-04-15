@@ -26,6 +26,7 @@ const projects = {
       website: 'https://redorbluegame.wixsite.com/redorblue',
     },
     video: 'https://www.youtube.com/embed/9Tag0OPSJdg',
+    techs: ['Unity, C#, Photoshop, PyxelEdit'],
   },
   hearo: {
     name: 'Hearo',
@@ -38,6 +39,7 @@ const projects = {
       github: 'https://github.com/ralfisalhon/Hearo-noSensitive',
     },
     video: 'https://www.youtube.com/embed/QadrLYQTbFI',
+    techs: ['React Native, Voximplant API, Google Speech-to-Text API, Twilio API'],
   },
   jamblr: {
     name: 'Jamblr',
@@ -60,6 +62,7 @@ const projects = {
       'https://placehold.it/1334x750',
       'https://placehold.it/1334x750',
     ],
+    techs: ['React Native, Node.js, Heroku, Spotify API, Testflight'],
   },
   coverlove: {
     name: 'coverlove',
@@ -75,6 +78,7 @@ const projects = {
       appstore: 'https://apps.apple.com/us/app/coverlove-cover-art-maker/id1458456335',
     },
     screenshots: ['https://placehold.it/1334x750', 'https://placehold.it/1334x750', 'https://placehold.it/1334x750'],
+    techs: ['React Native'],
   },
   polysentry: {
     name: 'PolySentry',
@@ -87,6 +91,7 @@ const projects = {
       playstore: 'https://play.google.com/store/apps/details?id=com.polysentry',
       website: 'https://polysentry.com/',
     },
+    techs: ['React Native, Node.js, Firebase API, Testflight'],
   },
   tunewise: {
     name: 'TuneWise',
@@ -99,6 +104,7 @@ const projects = {
       github: 'https://github.com/ralfisalhon/TuneWise',
       website: 'https://github.com/ralfisalhon/TuneWise-web',
     },
+    techs: ['React Native, Node.js, Heroku'],
   },
   potencia: {
     name: 'Potencia',
@@ -110,6 +116,7 @@ const projects = {
       github: 'https://github.com/ralfisalhon/Potentia',
       website: 'https://www.potenciaus.org/',
     },
+    techs: ['React Native, Node.js, Heroku'],
   },
   igurme: {
     name: 'iGurme',
@@ -120,6 +127,7 @@ const projects = {
     platforms: {
       github: 'https://github.com/ralfisalhon/iGurme-Docs',
     },
+    techs: ['React Native, Firebase API, Insider API'],
   },
   claimate: {
     name: 'Claimate',
@@ -133,6 +141,7 @@ const projects = {
       website: 'https://globallegalhackathon.com/',
     },
     video: 'https://www.youtube.com/embed/3uotkVSIglA',
+    techs: ['React Native'],
   },
 };
 

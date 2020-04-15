@@ -15,7 +15,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className="homeBody fade-in">
-        <div className="centertext">
+        <div className={global.isMobile ? 'centertext-mobile' : 'centertext'}>
           <h1 className="text">Hi, my name is Ralfi.</h1>
           <div className="m-5" />
           <p className="text">I develop great looking mobile & web apps.</p>
@@ -34,80 +34,82 @@ class HomePage extends Component {
             </code>
           </div>
         </div>
-        <div className="base">
-          <div className="item item-1">
-            <img
-              className="round_icon"
-              alt="app_icon"
-              src={coverlove}
-              onClick={() => (window.location.href = '/projects/coverlove')}
-            />
-            <p className="text small m--5">coverlove</p>
+        {!global.isMobile && (
+          <div className="base">
+            <div className="item item-1">
+              <img
+                className="round_icon"
+                alt="app_icon"
+                src={coverlove}
+                onClick={() => (window.location.href = '/projects/coverlove')}
+              />
+              <p className="text small m--5">coverlove</p>
+            </div>
+            <div className="item item-2">
+              <img
+                className="round_icon"
+                alt="app_icon"
+                src={jamblr}
+                onClick={() => (window.location.href = '/projects/jamblr')}
+              />
+              <p className="text small m--5">Jamblr</p>
+            </div>
+            <div className="item item-3">
+              <img
+                className="round_icon"
+                alt="app_icon"
+                src={polysentry}
+                onClick={() => (window.location.href = '/projects/polysentry')}
+              />
+              <p className="text small m--5">PolySentry</p>
+            </div>
+            <div className="item item-4">
+              <img
+                className="round_icon"
+                alt="app_icon"
+                src={redorblue}
+                onClick={() => (window.location.href = '/projects/redorblue')}
+              />
+              <p className="text small m--5">Red or Blue</p>
+            </div>
+            <div className="item item-5">
+              <img
+                className="round_icon"
+                alt="app_icon"
+                src={potencia}
+                onClick={() => (window.location.href = '/projects/potencia')}
+              />
+              <p className="text small m--5">Potencia</p>
+            </div>
+            <div className="item item-6">
+              <img
+                className="round_icon"
+                alt="app_icon"
+                src={hearo}
+                onClick={() => (window.location.href = '/projects/hearo')}
+              />
+              <p className="text small m--5">Hearo</p>
+            </div>
+            <div className="item item-7">
+              <img
+                className="round_icon"
+                alt="app_icon"
+                src={tunewise}
+                onClick={() => (window.location.href = '/projects/tunewise')}
+              />
+              <p className="text small m--5">TuneWise</p>
+            </div>
+            <div className="item item-8">
+              <img
+                className="round_icon"
+                alt="app_icon"
+                src={igurme}
+                onClick={() => (window.location.href = '/projects/igurme')}
+              />
+              <p className="text small m--5">iGurme</p>
+            </div>
           </div>
-          <div className="item item-2">
-            <img
-              className="round_icon"
-              alt="app_icon"
-              src={jamblr}
-              onClick={() => (window.location.href = '/projects/jamblr')}
-            />
-            <p className="text small m--5">Jamblr</p>
-          </div>
-          <div className="item item-3">
-            <img
-              className="round_icon"
-              alt="app_icon"
-              src={polysentry}
-              onClick={() => (window.location.href = '/projects/polysentry')}
-            />
-            <p className="text small m--5">PolySentry</p>
-          </div>
-          <div className="item item-4">
-            <img
-              className="round_icon"
-              alt="app_icon"
-              src={redorblue}
-              onClick={() => (window.location.href = '/projects/redorblue')}
-            />
-            <p className="text small m--5">Red or Blue</p>
-          </div>
-          <div className="item item-5">
-            <img
-              className="round_icon"
-              alt="app_icon"
-              src={potencia}
-              onClick={() => (window.location.href = '/projects/potencia')}
-            />
-            <p className="text small m--5">Potencia</p>
-          </div>
-          <div className="item item-6">
-            <img
-              className="round_icon"
-              alt="app_icon"
-              src={hearo}
-              onClick={() => (window.location.href = '/projects/hearo')}
-            />
-            <p className="text small m--5">Hearo</p>
-          </div>
-          <div className="item item-7">
-            <img
-              className="round_icon"
-              alt="app_icon"
-              src={tunewise}
-              onClick={() => (window.location.href = '/projects/tunewise')}
-            />
-            <p className="text small m--5">TuneWise</p>
-          </div>
-          <div className="item item-8">
-            <img
-              className="round_icon"
-              alt="app_icon"
-              src={igurme}
-              onClick={() => (window.location.href = '/projects/igurme')}
-            />
-            <p className="text small m--5">iGurme</p>
-          </div>
-        </div>
+        )}
         <div className="after-spin">
           <p className="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
