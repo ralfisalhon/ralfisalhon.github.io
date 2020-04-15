@@ -51,7 +51,7 @@ class AlphabetRecord extends Component {
           src="https://www.youtube-nocookie.com/embed/Mo094dNblBc"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowfullscreen="allowfullscreen"
         />
       </div>
     );

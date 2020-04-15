@@ -31,7 +31,7 @@ class App extends Component {
                 <Header />
               </div>
             )}
-            <div className="content">
+            <div className={global.isMobile ? 'content-mobile' : 'content'}>
               <Route exact path="/" component={HomePage} />
               <Route exact path="/resume" component={ResumePage} />
               <Route path="/projects">

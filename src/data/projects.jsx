@@ -6,7 +6,7 @@ import polysentryLogo from '../assets/images/round_icons/polysentry.png';
 import potenciaLogo from '../assets/images/round_icons/potencia.png';
 import redorblueLogo from '../assets/images/round_icons/redorblue.png';
 import tunewiseLogo from '../assets/images/round_icons/tunewise.png';
-import claimateLogo from '../assets/images/round_icons/claimate.png';
+import claimmateLogo from '../assets/images/round_icons/claimmate.png';
 
 const projects = {
   redorblue: {
@@ -65,7 +65,7 @@ const projects = {
     techs: ['React Native, Node.js, Heroku, Spotify API, Testflight'],
   },
   coverlove: {
-    name: 'coverlove',
+    name: 'CoverLove',
     logo: coverloveLogo,
     color: 'rgb(243, 156, 18)',
     title: 'A simple tool to create new playlist cover art.',
@@ -129,9 +129,9 @@ const projects = {
     },
     techs: ['React Native, Firebase API, Insider API'],
   },
-  claimate: {
-    name: 'Claimate',
-    logo: claimateLogo,
+  claimmate: {
+    name: 'ClaimMate',
+    logo: claimmateLogo,
     color: 'rgb(18, 47, 66)',
     title: 'A Global Legal Hackathon Finalist',
     description: 'Done in 48 hours. I slept like 5 hours.',

@@ -33,7 +33,11 @@ class Header extends Component {
             <a className="text header-text" href="/resume" style={url === '/resume' ? selectStyle : {}}>
               Resume
             </a>
-            <a className="text header-text" href="/projects" style={url === '/projects' ? selectStyle : {}}>
+            <a
+              className="text header-text"
+              href="/projects"
+              style={url.substr(0, 9) === '/projects' ? selectStyle : {}}
+            >
               Projects
             </a>
             <a className="text header-text" href="/teach" style={url === '/teach' ? selectStyle : {}}>
