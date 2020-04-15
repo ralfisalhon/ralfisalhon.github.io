@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 class Project extends Component {
   render() {
-    const { logo, name, title, description, awards, platforms, video, color } = this.props;
+    const { logo, name, title, description, awards, platforms, video, color } = this.props.project;
     return (
       <div className="project">
         <div className="catchPhraseContainer" style={{ backgroundColor: color }}>

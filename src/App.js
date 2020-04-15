@@ -13,6 +13,7 @@ import TeachingPage from './screens/teach';
 import FunFactsPage from './screens/fun';
 
 import projects from './data/projects';
+import Line from './components/Line';
 
 class App extends Component {
   constructor() {
@@ -35,16 +36,7 @@ class App extends Component {
                 <ProjectsPage>
                   {Object.keys(projects).map((key) => (
                     <Route path={'/projects/' + key}>
-                      <Project
-                        logo={projects[key].logo}
-                        color={projects[key].color}
-                        title={projects[key].title}
-                        name={projects[key].name}
-                        description={projects[key].description}
-                        awards={projects[key].awards}
-                        platforms={projects[key].platforms}
-                        video={projects[key].video}
-                      />
+                      <Project project={projects[key]} />
                     </Route>
                   ))}
                 </ProjectsPage>
@@ -53,7 +45,7 @@ class App extends Component {
                 <div className="all-projects">
                   {Object.keys(projects).map((key) => (
                     <div onClick={() => (window.location.href = '/projects/' + key)}>
-                      <SmallProject logo={projects[key].logo} color={projects[key].color} name={projects[key].name} />
+                      <SmallProject project={projects[key]} />
                     </div>
                   ))}
                 </div>

@@ -5,11 +5,14 @@ import PropTypes from 'prop-types';
 
 class SmallProject extends Component {
   render() {
-    const { logo, name, color } = this.props;
+    const { logo, name, title } = this.props.project;
     return (
-      <div className="small-project" style={{ backgroundColor: color }}>
+      <div className="small-project">
         <img className="logo-small" src={logo} alt="logo" />
-        <h1 className="text project-text">{name}</h1>
+        <div className="m-20-left">
+          <h1 className="text">{name}</h1>
+          <p className="text">{title}</p>
+        </div>
       </div>
     );
   }
