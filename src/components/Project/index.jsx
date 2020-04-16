@@ -12,7 +12,7 @@ const platform_conversions = {
 
 class Project extends Component {
   render() {
-    const { logo, name, title, description, awards, platforms, screenshots, video, color } = this.props.project;
+    const { logo, name, title, description, awards, platforms, screenshots, video, color, wideSS } = this.props.project;
     return (
       <div className="project">
         <div className="catchPhraseContainer" style={{ backgroundColor: color }}>
@@ -69,7 +69,11 @@ class Project extends Component {
             <div className="row around">
               {screenshots &&
                 screenshots.map((screenshot) => (
-                  <img className="screenshot" alt="project screenshot" src={screenshot}></img>
+                  <img
+                    className={wideSS ? 'screenshot-wide' : 'screenshot'}
+                    alt="project screenshot"
+                    src={screenshot}
+                  ></img>
                 ))}
             </div>
             {video && (

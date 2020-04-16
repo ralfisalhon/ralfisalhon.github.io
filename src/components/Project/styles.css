@@ -37,6 +37,13 @@
   border: 1px solid lightgray;
 }
 
+.screenshot-wide {
+  width: calc(50vh * 0.562);
+  height: 60vh;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+}
+
 .around {
   justify-content: space-around !important;
 }

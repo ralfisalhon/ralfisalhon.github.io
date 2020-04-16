@@ -13,10 +13,27 @@ import jamblrSS2 from '../assets/images/projects/jamblr/SS2.jpg';
 import jamblrSS3 from '../assets/images/projects/jamblr/SS3.jpg';
 import jamblrSS4 from '../assets/images/projects/jamblr/SS4.jpg';
 
+import tunewiseSS1 from '../assets/images/projects/tunewise/SS1.png';
+import tunewiseSS2 from '../assets/images/projects/tunewise/SS2.png';
+import tunewiseSS3 from '../assets/images/projects/tunewise/SS3.png';
+import tunewiseSS4 from '../assets/images/projects/tunewise/SS4.png';
+
 import igurmeSS1 from '../assets/images/projects/igurme/SS1.png';
 import igurmeSS2 from '../assets/images/projects/igurme/SS2.png';
 import igurmeSS3 from '../assets/images/projects/igurme/SS3.png';
 import igurmeSS4 from '../assets/images/projects/igurme/SS4.png';
+
+import coverloveSS1 from '../assets/images/projects/coverlove/SS1.png';
+import coverloveSS2 from '../assets/images/projects/coverlove/SS2.png';
+import coverloveSS3 from '../assets/images/projects/coverlove/SS3.png';
+
+import polysentrySS1 from '../assets/images/projects/polysentry/SS1.png';
+import polysentrySS2 from '../assets/images/projects/polysentry/SS2.png';
+import polysentrySS3 from '../assets/images/projects/polysentry/SS3.png';
+
+import potenciaSS1 from '../assets/images/projects/potencia/SS1.png';
+import potenciaSS2 from '../assets/images/projects/potencia/SS2.png';
+import potenciaSS3 from '../assets/images/projects/potencia/SS3.png';
 
 const projects = {
   redorblue: {
@@ -78,7 +95,7 @@ const projects = {
       github: 'https://github.com/ralfisalhon/coverlove',
       appstore: 'https://apps.apple.com/us/app/coverlove-cover-art-maker/id1458456335',
     },
-    screenshots: ['https://placehold.it/750x1334', 'https://placehold.it/750x1334', 'https://placehold.it/750x1334'],
+    screenshots: [coverloveSS1, coverloveSS2, coverloveSS3],
     techs: ['React Native'],
   },
   polysentry: {
@@ -92,6 +109,7 @@ const projects = {
       playstore: 'https://play.google.com/store/apps/details?id=com.polysentry',
       website: 'https://polysentry.com/',
     },
+    screenshots: [polysentrySS1, polysentrySS2, polysentrySS3],
     techs: ['React Native, Node.js, Firebase API, Testflight'],
   },
   tunewise: {
@@ -105,7 +123,7 @@ const projects = {
       github: 'https://github.com/ralfisalhon/TuneWise',
       website: 'https://github.com/ralfisalhon/TuneWise-web',
     },
-    screenshots: ['https://placehold.it/750x1334', 'https://placehold.it/750x1334', 'https://placehold.it/750x1334'],
+    screenshots: [tunewiseSS1, tunewiseSS2, tunewiseSS3, tunewiseSS4],
     techs: ['React Native, Node.js, Heroku'],
   },
   potencia: {
@@ -118,8 +136,9 @@ const projects = {
       github: 'https://github.com/ralfisalhon/Potentia',
       website: 'https://www.potenciaus.org/',
     },
-    screenshots: ['https://placehold.it/750x1334', 'https://placehold.it/750x1334', 'https://placehold.it/750x1334'],
+    screenshots: [potenciaSS1, potenciaSS2, potenciaSS3],
     techs: ['React Native, Node.js, Heroku'],
+    wideSS: true,
   },
   igurme: {
     name: 'iGurme',
