@@ -8,6 +8,16 @@ import redorblueLogo from '../assets/images/round_icons/redorblue.png';
 import tunewiseLogo from '../assets/images/round_icons/tunewise.png';
 import claimmateLogo from '../assets/images/round_icons/claimmate.png';
 
+import jamblrSS1 from '../assets/images/projects/jamblr/SS1.jpg';
+import jamblrSS2 from '../assets/images/projects/jamblr/SS2.jpg';
+import jamblrSS3 from '../assets/images/projects/jamblr/SS3.jpg';
+import jamblrSS4 from '../assets/images/projects/jamblr/SS4.jpg';
+
+import igurmeSS1 from '../assets/images/projects/igurme/SS1.png';
+import igurmeSS2 from '../assets/images/projects/igurme/SS2.png';
+import igurmeSS3 from '../assets/images/projects/igurme/SS3.png';
+import igurmeSS4 from '../assets/images/projects/igurme/SS4.png';
+
 const projects = {
   redorblue: {
     name: 'Red or Blue',
@@ -52,12 +62,7 @@ const projects = {
       github: 'https://github.com/ralfisalhon/jamblr-polyhack2018',
       appstore: 'https://apps.apple.com/us/app/jamblr-discover-new-music/id1450608022',
     },
-    screenshots: [
-      'https://placehold.it/750x1334',
-      'https://placehold.it/750x1334',
-      'https://placehold.it/750x1334',
-      'https://placehold.it/750x1334',
-    ],
+    screenshots: [jamblrSS1, jamblrSS2, jamblrSS3, jamblrSS4],
     techs: ['React Native, Node.js, Heroku, Spotify API, Testflight'],
   },
   coverlove: {
@@ -125,7 +130,7 @@ const projects = {
     platforms: {
       github: 'https://github.com/ralfisalhon/iGurme-Docs',
     },
-    screenshots: ['https://placehold.it/750x1334', 'https://placehold.it/750x1334', 'https://placehold.it/750x1334'],
+    screenshots: [igurmeSS1, igurmeSS2, igurmeSS3, igurmeSS4],
     techs: ['React Native, Firebase API, Insider API'],
   },
   claimmate: {

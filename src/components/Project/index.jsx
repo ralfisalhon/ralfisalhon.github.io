@@ -68,7 +68,9 @@ class Project extends Component {
             <div className="m-20" />
             <div className="row around">
               {screenshots &&
-                screenshots.map((screenshot) => <img className="screenshot" alt="avatar" src={screenshot}></img>)}
+                screenshots.map((screenshot) => (
+                  <img className="screenshot" alt="project screenshot" src={screenshot}></img>
+                ))}
             </div>
             {video && (
               <div>
