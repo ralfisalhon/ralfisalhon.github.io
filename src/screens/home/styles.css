@@ -37,14 +37,14 @@
 }
 
 .base {
-  border-radius: 44vh;
-  width: 88vh;
-  height: 88vh;
+  border-radius: 25vw;
+  width: 50vw;
+  height: 50vw;
   position: absolute;
   left: calc(50% + 5vw);
-  margin-left: -44vh;
+  margin-left: -25vw;
   top: 50%;
-  margin-top: -44vh;
+  margin-top: -25vw;
   /* border: 1px solid black; */
 
   -webkit-animation-name: spin;
@@ -194,4 +194,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.footer-mobile {
+  display: flex;
+  flex-direction: row;
+  min-height: 35px;
 }

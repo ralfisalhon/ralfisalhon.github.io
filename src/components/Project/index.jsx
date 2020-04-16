@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 class Project extends Component {
   render() {
-    const { logo, name, title, description, awards, platforms, video, color } = this.props.project;
+    const { logo, name, title, description, awards, platforms, screenshots, video, color } = this.props.project;
     return (
       <div className="project">
         <div className="catchPhraseContainer" style={{ backgroundColor: color }}>
@@ -33,6 +33,10 @@ class Project extends Component {
             <p className="text">{description}</p>
           )}
           <div className="m-20" />
+          <div className="row around">
+            {screenshots &&
+              screenshots.map((screenshot) => <img className="screenshot" alt="avatar" src={screenshot}></img>)}
+          </div>
           {video && (
             <div>
               <div className="m-20" />
@@ -43,7 +47,6 @@ class Project extends Component {
                 src={video}
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                // allowfullscreen
               />
             </div>
           )}

@@ -13,7 +13,7 @@ import TeachingPage from './screens/teach';
 import FunFactsPage from './screens/fun';
 
 import projects from './data/projects';
-global.isMobile = window.innerWidth <= 500;
+global.isMobile = window.innerWidth <= 1500;
 
 class App extends Component {
   constructor() {

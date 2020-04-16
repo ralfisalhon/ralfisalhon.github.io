@@ -51,7 +51,7 @@
 .full-page {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: none;
   width: 100vw;
   min-height: 100vh;
   flex-direction: row;

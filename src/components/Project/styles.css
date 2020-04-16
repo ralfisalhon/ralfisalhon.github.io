@@ -29,3 +29,12 @@
 .right {
   margin-left: auto;
 }
+
+.screenshot {
+  width: calc(50vh * 0.562);
+  height: 50vh;
+}
+
+.around {
+  justify-content: space-around !important;
+}

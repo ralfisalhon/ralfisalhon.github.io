@@ -10,6 +10,11 @@ import potencia from '../../assets/images/round_icons/potencia.png';
 import redorblue from '../../assets/images/round_icons/redorblue.png';
 import tunewise from '../../assets/images/round_icons/tunewise.png';
 
+import LinkedInLogo from '../../assets/svg/linkedin.svg';
+import YoutubeLogo from '../../assets/svg/youtube.svg';
+import GithubLogo from '../../assets/svg/github.svg';
+import SpotifyLogo from '../../assets/svg/spotify.svg';
+
 import resume from '../../assets/pdf/RRS_Resume_Mar_2020_V2.pdf';
 
 class HomePage extends Component {
@@ -37,9 +42,35 @@ class HomePage extends Component {
             </code>
           </div>
           {global.isMobile && (
-            <p className="text smaller" style={{ position: 'absolute', bottom: 20 }}>
-              ps. this website is best experienced on desktop
-            </p>
+            <div>
+              <div className="m-20" />
+              <div className="footer-mobile">
+                <div className="social" onClick={() => window.open('https://www.linkedin.com/in/ralfisalhon/')}>
+                  <img src={LinkedInLogo} alt="LinkedIn Logo" />
+                </div>
+                <div className="social w-5" onClick={() => window.open('https://github.com/ralfisalhon')}>
+                  <img src={GithubLogo} alt="Github Logo" />
+                </div>
+                <div
+                  className="social w-5"
+                  onClick={() => window.open('https://open.spotify.com/user/pnoig1591pjau15ah9ja412k6')}
+                >
+                  <img src={SpotifyLogo} alt="Spotify Logo" />
+                </div>
+                <div
+                  className="social w-5"
+                  onClick={() =>
+                    window.open('https://www.youtube.com/channel/UCZOm0qLlSm19QyvAc_rsOmQ?view_as=subscriber')
+                  }
+                >
+                  <img src={YoutubeLogo} alt="Youtube Logo" />
+                </div>
+              </div>
+
+              <p className="text smaller" style={{ position: 'absolute', bottom: 20 }}>
+                ps. this website is best experienced on desktop
+              </p>
+            </div>
           )}
         </div>
         {!global.isMobile && (
