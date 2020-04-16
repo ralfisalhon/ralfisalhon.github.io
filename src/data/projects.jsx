@@ -46,11 +46,8 @@ const projects = {
     logo: jamblrLogo,
     color: '#2f2f2f',
     title: 'Your music discovery and playlist creation platform.',
-    description: [
-      'This took a really fun 4 months to make. But it started a lot simpler than that. In fact, we had a working demo in a day.',
-      'Polyhack 2018',
-    ],
-    awards: [' Hubspot Special Award, Polyhack 2018'],
+    description: ['This took a really fun 4 months to make. But it started a lot simpler than that. Polyhack 2018'],
+    awards: ['Hubspot Special Award, Polyhack 2018'],
     platforms: {
       github: 'https://github.com/ralfisalhon/jamblr-polyhack2018',
       appstore: 'https://apps.apple.com/us/app/jamblr-discover-new-music/id1450608022',
@@ -103,6 +100,7 @@ const projects = {
       github: 'https://github.com/ralfisalhon/TuneWise',
       website: 'https://github.com/ralfisalhon/TuneWise-web',
     },
+    screenshots: ['https://placehold.it/750x1334', 'https://placehold.it/750x1334', 'https://placehold.it/750x1334'],
     techs: ['React Native, Node.js, Heroku'],
   },
   potencia: {
@@ -115,6 +113,7 @@ const projects = {
       github: 'https://github.com/ralfisalhon/Potentia',
       website: 'https://www.potenciaus.org/',
     },
+    screenshots: ['https://placehold.it/750x1334', 'https://placehold.it/750x1334', 'https://placehold.it/750x1334'],
     techs: ['React Native, Node.js, Heroku'],
   },
   igurme: {
@@ -126,6 +125,7 @@ const projects = {
     platforms: {
       github: 'https://github.com/ralfisalhon/iGurme-Docs',
     },
+    screenshots: ['https://placehold.it/750x1334', 'https://placehold.it/750x1334', 'https://placehold.it/750x1334'],
     techs: ['React Native, Firebase API, Insider API'],
   },
   claimmate: {
@@ -134,7 +134,7 @@ const projects = {
     color: 'rgb(18, 47, 66)',
     title: 'A Global Legal Hackathon Finalist',
     description: 'Done in 48 hours. I slept like 5 hours.',
-    awards: ['2nd Place, Global Legal Hackathon'],
+    awards: ['2nd Place, Global Legal Hackathon 2019'],
     platforms: {
       github: 'https://github.com/ralfisalhon/CLAIMate',
       website: 'https://globallegalhackathon.com/',

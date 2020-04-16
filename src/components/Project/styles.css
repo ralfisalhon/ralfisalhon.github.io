@@ -11,8 +11,8 @@
 }
 
 .logo {
-  width: 20vh;
-  height: 20vh;
+  width: 18vh;
+  height: 18vh;
 }
 
 .whiteText {
@@ -37,4 +37,16 @@
 
 .around {
   justify-content: space-around !important;
+}
+
+.platforms {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.platform {
+  margin-right: 10px;
+  padding: 20px;
+  border-radius: 20px;
 }

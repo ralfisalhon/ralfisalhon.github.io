@@ -3,6 +3,13 @@ import React, { Component } from 'react';
 import './styles.css';
 import PropTypes from 'prop-types';
 
+const platform_conversions = {
+  github: 'Github',
+  playstore: 'Play Store',
+  appstore: 'App Store',
+  website: 'Website',
+};
+
 class Project extends Component {
   render() {
     const { logo, name, title, description, awards, platforms, screenshots, video, color } = this.props.project;
@@ -15,14 +22,39 @@ class Project extends Component {
               <div className="m-20" />
               <center className="right">
                 <img className="logo" src={logo} alt="logo" />
-                <h1 className="whiteText">{name}</h1>
+                <div className="m-10" />
+                <h1 className="text whiteText">{name}</h1>
               </center>
             </div>
           </div>
         </div>
         <div className="m-20" />
-        <div className="m-20" />
-        <center style={{ paddingRight: '5vw', paddingLeft: '5vw' }}>
+        {platforms && (
+          <div className="platforms">
+            {Object.keys(platforms).map((platform) => (
+              <div
+                className="platform cursor"
+                style={{ backgroundColor: color }}
+                onClick={() => window.open(platforms[platform], '_blank')}
+              >
+                <p className="text whiteText">{platform_conversions[platform]}</p>
+              </div>
+            ))}
+            {awards && (
+              <div className="awards right">
+                {awards.map((award) => (
+                  <div className="platform" style={{ backgroundColor: color }}>
+                    <p className="text whiteText">
+                      {'🏆 '}
+                      {award}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+        <div>
           {Array.isArray(description) ? (
             description.map((desc) => (
               <div style={{ marginBottom: '10px' }}>
@@ -32,25 +64,26 @@ class Project extends Component {
           ) : (
             <p className="text">{description}</p>
           )}
-          <div className="m-20" />
-          <div className="row around">
-            {screenshots &&
-              screenshots.map((screenshot) => <img className="screenshot" alt="avatar" src={screenshot}></img>)}
-          </div>
-          {video && (
-            <div>
-              <div className="m-20" />
-              <iframe
-                title="video"
-                width={window.innerWidth * 0.6}
-                height={window.innerWidth * 0.6 * 0.56}
-                src={video}
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              />
+          <center>
+            <div className="m-20" />
+            <div className="row around">
+              {screenshots &&
+                screenshots.map((screenshot) => <img className="screenshot" alt="avatar" src={screenshot}></img>)}
             </div>
-          )}
-        </center>
+            {video && (
+              <div>
+                <div className="m-20" />
+                <iframe
+                  title="video"
+                  width={window.innerWidth * 0.6}
+                  height={window.innerWidth * 0.6 * 0.56}
+                  src={video}
+                  frameborder="0"
+                />
+              </div>
+            )}
+          </center>
+        </div>
       </div>
     );
   }
